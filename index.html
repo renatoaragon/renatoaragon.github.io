@@ -5,163 +5,202 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Renato Aragón — Senior Data Engineer</title>
   <meta name="description" content="Senior Data Engineer and software builder. Cloud data architecture on AWS, and founder of Aragón Tecnologia — AI-driven SaaS products." />
+  <meta property="og:title" content="Renato Aragón — Senior Data Engineer" />
+  <meta property="og:description" content="Cloud data architecture on AWS, and founder of Aragón Tecnologia — AI-driven SaaS products." />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="bg" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="grid-overlay"></div>
+    <div class="grain"></div>
+  </div>
+
   <header class="nav">
     <div class="wrap nav-inner">
-      <a href="#top" class="brand">RA</a>
+      <a href="#top" class="brand">RA<span>.</span></a>
       <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">about</a>
+        <a href="#stack">stack</a>
+        <a href="#work">work</a>
+        <a href="#contact">contact</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero wrap">
-      <img class="avatar" src="assets/profile.jpg" alt="Renato Aragón" />
-      <p class="eyebrow">Senior Data Engineer · Software Builder</p>
-      <h1>Renato Aragón</h1>
-      <p class="lede">
-        I design and run cloud data architectures and ship production software end to end.
-        By day, a Senior Data Engineer working with large-scale data pipelines on AWS.
-        On the side, founder of <strong>Aragón Tecnologia</strong>, where I build and operate
-        AI-driven SaaS products serving real customers.
-      </p>
-      <div class="cta">
-        <a class="btn primary" href="#work">See my work</a>
-        <a class="btn" href="https://www.linkedin.com/in/aragonrenato/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://github.com/renatoaragon" target="_blank" rel="noopener">GitHub</a>
+    <section class="hero wrap reveal">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="mono-label"><span class="dot"></span> Senior Data Engineer · Builder</p>
+          <h1>Renato <span class="grad">Aragón</span></h1>
+          <p class="lede">
+            I architect and run cloud data platforms — and ship production software end to end.
+            Senior Data Engineer working with large-scale pipelines on <strong>AWS</strong>,
+            and founder of <strong>Aragón Tecnologia</strong>, where I build and operate
+            AI-driven SaaS products serving real customers.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="#work">View work</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/aragonrenato/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn ghost" href="https://github.com/renatoaragon" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <div class="stats">
+            <div><strong>6+</strong><span>shipped products</span></div>
+            <div><strong>AWS</strong><span>data platforms</span></div>
+            <div><strong>0→prod</strong><span>full lifecycle</span></div>
+          </div>
+        </div>
+        <div class="hero-aside">
+          <div class="avatar-ring">
+            <img class="avatar" src="assets/profile.jpg" alt="Renato Aragón" />
+          </div>
+          <div class="code-card mono">
+            <div class="code-dots"><span></span><span></span><span></span></div>
+            <pre><code><span class="c-key">const</span> renato = {
+  <span class="c-prop">role</span>: <span class="c-str">"Senior Data Engineer"</span>,
+  <span class="c-prop">cloud</span>: [<span class="c-str">"AWS"</span>, <span class="c-str">"Terraform"</span>],
+  <span class="c-prop">builds</span>: <span class="c-str">"AI SaaS @ Aragón"</span>,
+  <span class="c-prop">status</span>: <span class="c-str">"shipping"</span> ✦
+}</code></pre>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="wrap section">
-      <h2>About</h2>
+    <section id="about" class="wrap section reveal">
+      <p class="mono-label">// about</p>
+      <h2>Data engineering meets product.</h2>
       <div class="grid-2">
         <p>
-          I'm a data engineer with a strong AWS background — building reliable batch and
-          streaming pipelines, modelling data for analytics, and automating infrastructure
-          as code. I care about systems that are correct, observable, and maintainable.
+          I build reliable batch and streaming pipelines, model data for analytics, and
+          automate infrastructure as code. I care about systems that are correct, observable,
+          and maintainable — not just demos that work once.
         </p>
         <p>
-          Beyond data engineering, I'm a full-stack builder. Through Aragón Tecnologia I take
-          products from idea to production: architecture, development, deployment, and
-          day-to-day operations — including zero-downtime deploys and integrating AI where it
-          genuinely improves the product, not as a gimmick.
+          Through Aragón Tecnologia I take products from idea to production: architecture,
+          development, deployment, and operations — including zero-downtime deploys and
+          AI integrated where it genuinely improves the product.
         </p>
       </div>
     </section>
 
-    <section id="skills" class="wrap section">
-      <h2>Skills</h2>
+    <section id="stack" class="wrap section reveal">
+      <p class="mono-label">// stack</p>
+      <h2>The toolkit.</h2>
       <div class="skills">
         <div class="skill-group">
-          <h3>Data Engineering</h3>
-          <ul>
-            <li>PySpark</li>
-            <li>SQL</li>
-            <li>AWS Athena</li>
-            <li>Data modelling</li>
-            <li>ETL / ELT pipelines</li>
+          <h3>Data</h3>
+          <ul class="chips">
+            <li>PySpark</li><li>SQL</li><li>AWS Athena</li>
+            <li>Data modelling</li><li>ETL / ELT</li>
           </ul>
         </div>
         <div class="skill-group">
           <h3>Cloud &amp; Infra</h3>
-          <ul>
-            <li>AWS (S3, EC2, Athena)</li>
-            <li>Terraform</li>
-            <li>Linux</li>
-            <li>CI/CD</li>
-            <li>Blue-green deploys</li>
+          <ul class="chips">
+            <li>AWS S3</li><li>EC2</li><li>Terraform</li>
+            <li>Linux</li><li>CI/CD</li><li>Blue-green</li>
           </ul>
         </div>
         <div class="skill-group">
           <h3>Software</h3>
-          <ul>
-            <li>Next.js / React</li>
-            <li>Node.js</li>
-            <li>PostgreSQL</li>
-            <li>REST APIs</li>
-            <li>AI / LLM integration</li>
+          <ul class="chips">
+            <li>Next.js</li><li>React</li><li>Node.js</li>
+            <li>PostgreSQL</li><li>REST</li><li>LLM integration</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section id="work" class="wrap section">
-      <h2>Work</h2>
+    <section id="work" class="wrap section reveal">
+      <p class="mono-label">// work</p>
+      <h2>Products I've built &amp; operate.</h2>
       <p class="section-sub">
-        Products I've built and operate through Aragón Tecnologia — software and data
-        architecture with applied AI, built for trust, security, and precision.
+        Vertical SaaS through Aragón Tecnologia — software and data architecture with applied AI,
+        built for trust, security, and precision.
       </p>
       <div class="cards">
         <a class="card" href="https://psycohub.com.br" target="_blank" rel="noopener">
-          <h3>PsycoHub <span class="arrow">↗</span></h3>
+          <div class="card-top"><h3>PsycoHub</h3><span class="arrow">↗</span></div>
           <p>
-            A clinical management platform for psychologists: electronic records, scheduling,
-            and finance in one place. Features 21 validated clinical scales with automatic
-            scoring and AI that drafts records, flags dropout risk, and surfaces progress insights.
+            Clinical management platform for psychologists — records, scheduling and finance in one place.
+            21 validated clinical scales with automatic scoring, plus AI that drafts records, flags dropout
+            risk, and surfaces progress insights.
           </p>
-          <span class="tag">SaaS · AI · Healthcare</span>
+          <div class="tags"><span>SaaS</span><span>AI</span><span>Healthcare</span></div>
         </a>
         <a class="card" href="https://nutripro.digital" target="_blank" rel="noopener">
-          <h3>NutriPro <span class="arrow">↗</span></h3>
+          <div class="card-top"><h3>NutriPro</h3><span class="arrow">↗</span></div>
           <p>
-            A digital platform for nutritionists pairing AI-assisted nutritional analysis with
-            real-time patient tracking and teleconsultation — cutting analysis time and improving
-            patient adherence through a digital food diary.
+            Digital platform for nutritionists pairing AI-assisted nutritional analysis with real-time
+            patient tracking and teleconsultation — cutting analysis time and improving adherence through
+            a digital food diary.
           </p>
-          <span class="tag">SaaS · AI · Health</span>
+          <div class="tags"><span>SaaS</span><span>AI</span><span>Health</span></div>
         </a>
         <a class="card" href="https://sola.beauty" target="_blank" rel="noopener">
-          <h3>Sola Beauty <span class="arrow">↗</span></h3>
+          <div class="card-top"><h3>Sola Beauty</h3><span class="arrow">↗</span></div>
           <p>
-            Management platform for beauty salons and studios — scheduling, automated WhatsApp
-            confirmations, and real-time financial reporting that cuts no-shows and helps
-            independent professionals grow.
+            Management platform for beauty salons and studios — scheduling, automated WhatsApp confirmations,
+            and real-time financial reporting that cuts no-shows and helps independent professionals grow.
           </p>
-          <span class="tag">SaaS · Automation</span>
+          <div class="tags"><span>SaaS</span><span>Automation</span></div>
         </a>
         <a class="card" href="https://www.aragontecnologia.com/sportia" target="_blank" rel="noopener">
-          <h3>Sportia <span class="arrow">↗</span></h3>
+          <div class="card-top"><h3>Sportia</h3><span class="arrow">↗</span></div>
           <p>
-            A product for the sports sector, part of the Aragón Tecnologia portfolio of
-            vertical SaaS solutions.
+            A product for the sports sector, part of the Aragón Tecnologia portfolio of vertical SaaS solutions.
           </p>
-          <span class="tag">SaaS</span>
+          <div class="tags"><span>SaaS</span></div>
         </a>
       </div>
       <p class="more">
-        More at <a href="https://www.aragontecnologia.com" target="_blank" rel="noopener">aragontecnologia.com</a>
+        Full portfolio at <a href="https://www.aragontecnologia.com" target="_blank" rel="noopener">aragontecnologia.com →</a>
       </p>
     </section>
 
-    <section id="contact" class="wrap section contact">
-      <h2>Get in touch</h2>
-      <p>Open to interesting data engineering and product conversations.</p>
-      <div class="cta">
-        <a class="btn primary" href="mailto:renatoaragon@icloud.com">Email me</a>
-        <a class="btn" href="https://www.linkedin.com/in/aragonrenato/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://github.com/renatoaragon" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://www.aragontecnologia.com" target="_blank" rel="noopener">Aragón Tecnologia</a>
+    <section id="contact" class="wrap section reveal">
+      <div class="contact-card">
+        <p class="mono-label">// contact</p>
+        <h2>Let's build something.</h2>
+        <p class="contact-sub">Open to interesting data engineering and product conversations.</p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:renatoaragon@icloud.com">Email me</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/aragonrenato/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn ghost" href="https://github.com/renatoaragon" target="_blank" rel="noopener">GitHub</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap">
-      <p>© <span id="year"></span> Renato Aragón</p>
+    <div class="wrap foot-inner">
+      <span class="mono">© <span id="year"></span> Renato Aragón</span>
+      <span class="mono">built from scratch · no template</span>
     </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      });
+    });
   </script>
 </body>
 </html>
