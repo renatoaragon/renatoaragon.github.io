@@ -1,0 +1,17 @@
+{
+  "name": "Renato Aragón — Senior Data Engineer",
+  "short_name": "Renato Aragón",
+  "description": "Senior Data Engineer and software builder. Cloud data architecture on AWS, and founder of Aragón Tecnologia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07080c",
+  "theme_color": "#07080c",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
