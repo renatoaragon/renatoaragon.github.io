@@ -28,6 +28,18 @@ body {
 .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 a { color: inherit; text-decoration: none; }
 
+/* ---- Back to top ---- */
+.back-to-top {
+  position: fixed; bottom: 24px; right: 24px; z-index: 40;
+  width: 46px; height: 46px; border-radius: 50%; cursor: pointer;
+  border: 1px solid var(--border); background: rgba(13,16,24,.8); backdrop-filter: blur(10px);
+  color: var(--accent); font-size: 20px; line-height: 1;
+  opacity: 0; transform: translateY(12px); pointer-events: none;
+  transition: opacity .25s, transform .25s, border-color .2s, box-shadow .25s;
+}
+.back-to-top.show { opacity: 1; transform: none; pointer-events: auto; }
+.back-to-top:hover { border-color: var(--accent); box-shadow: 0 6px 20px rgba(110,168,254,.4); }
+
 /* ---- Scroll progress ---- */
 .scroll-progress {
   position: fixed; top: 0; left: 0; height: 3px; width: 0;
