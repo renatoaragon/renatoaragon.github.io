@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
   <div class="bg" aria-hidden="true">
     <div class="blob b1"></div>
     <div class="blob b2"></div>
@@ -195,6 +196,15 @@
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
     }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    const sp = document.getElementById('scrollProgress');
+    const onScroll = () => {
+      const h = document.documentElement;
+      const pct = h.scrollTop / (h.scrollHeight - h.clientHeight) * 100;
+      sp.style.width = pct + '%';
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
 
     document.querySelectorAll('.card').forEach(card => {
       card.addEventListener('mousemove', e => {
