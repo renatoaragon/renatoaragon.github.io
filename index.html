@@ -247,6 +247,8 @@
     </div>
   </footer>
 
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     const io = new IntersectionObserver((entries) => {
@@ -255,13 +257,16 @@
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
     const sp = document.getElementById('scrollProgress');
+    const btt = document.getElementById('backToTop');
     const onScroll = () => {
       const h = document.documentElement;
       const pct = h.scrollTop / (h.scrollHeight - h.clientHeight) * 100;
       sp.style.width = pct + '%';
+      btt.classList.toggle('show', h.scrollTop > 400);
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
+    btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
     document.querySelectorAll('.card').forEach(card => {
       card.addEventListener('mousemove', e => {
