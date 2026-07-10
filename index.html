@@ -56,6 +56,7 @@
         <a href="#stack">stack</a>
         <a href="#experience">experience</a>
         <a href="#work">work</a>
+        <a href="#opensource">open source</a>
         <a href="#contact">contact</a>
       </nav>
     </div>
@@ -240,6 +241,74 @@
       </div>
       <p class="more">
         Full portfolio at <a href="https://www.aragontecnologia.com" target="_blank" rel="noopener">aragontecnologia.com →</a>
+      </p>
+    </section>
+
+    <section id="opensource" class="wrap section reveal">
+      <p class="mono-label">// open source</p>
+      <h2>Engineering in the open.</h2>
+      <p class="section-sub">
+        Public data engineering projects: real patterns, tested and CI-checked, built in small
+        reviewed pull requests. Synthetic data only.
+      </p>
+      <div class="cards">
+        <a class="card" href="https://github.com/renatoaragon/kafka-retail-streaming" target="_blank" rel="noopener">
+          <div class="card-top"><h3>kafka-retail-streaming</h3><span class="arrow">↗</span></div>
+          <p>
+            Real-time retail events through Kafka (KRaft) and Spark Structured Streaming: windowed
+            aggregations with watermarks, a dead-letter queue, an Iceberg sink with exactly-once
+            semantics, and CDC with Postgres and Debezium.
+          </p>
+          <div class="tags"><span>Kafka</span><span>Spark</span><span>CDC</span></div>
+        </a>
+        <a class="card" href="https://github.com/renatoaragon/spark-retail-etl" target="_blank" rel="noopener">
+          <div class="card-top"><h3>spark-retail-etl</h3><span class="arrow">↗</span></div>
+          <p>
+            Production-shaped batch ETL with PySpark: incremental loads over a high-watermark,
+            partitioned outputs, quality gates with volume anomaly detection, run summaries for
+            observability, and architecture decision records.
+          </p>
+          <div class="tags"><span>PySpark</span><span>Data Quality</span><span>CI</span></div>
+        </a>
+        <a class="card" href="https://github.com/renatoaragon/dbt-duckdb-analytics" target="_blank" rel="noopener">
+          <div class="card-top"><h3>dbt-duckdb-analytics</h3><span class="arrow">↗</span></div>
+          <p>
+            Analytics engineering with dbt and DuckDB: staging to marts with four layers of data
+            tests, from column contracts and referential integrity to cross-layer revenue
+            reconciliation. Runs end to end at zero cost.
+          </p>
+          <div class="tags"><span>dbt</span><span>DuckDB</span><span>Testing</span></div>
+        </a>
+        <a class="card" href="https://github.com/renatoaragon/terraform-aws-datalake" target="_blank" rel="noopener">
+          <div class="card-top"><h3>terraform-aws-datalake</h3><span class="arrow">↗</span></div>
+          <p>
+            Reusable Terraform module for an AWS data lake on S3, Glue and Athena: secure by
+            default, plan-time input validation that mirrors the real API constraints, and fmt,
+            validate and tflint gates in CI.
+          </p>
+          <div class="tags"><span>Terraform</span><span>AWS</span><span>IaC</span></div>
+        </a>
+        <a class="card" href="https://github.com/renatoaragon/data-mapping-framework" target="_blank" rel="noopener">
+          <div class="card-top"><h3>data-mapping-framework</h3><span class="arrow">↗</span></div>
+          <p>
+            Maps heterogeneous sources (CSV, JSON, SQL, Parquet) into a canonical model and runs
+            business rules over it, splitting valid rows from rejects with every violated rule
+            reported per row.
+          </p>
+          <div class="tags"><span>Python</span><span>Pandas</span><span>Integrations</span></div>
+        </a>
+        <a class="card" href="https://github.com/renatoaragon/nl-to-sql" target="_blank" rel="noopener">
+          <div class="card-top"><h3>nl-to-sql</h3><span class="arrow">↗</span></div>
+          <p>
+            Natural language to SQL with Claude: the model proposes, a deterministic guard
+            disposes. A minimal lexer normalizes each query and blocks anything that is not a
+            single read-only SELECT.
+          </p>
+          <div class="tags"><span>LLM</span><span>DuckDB</span><span>Safety</span></div>
+        </a>
+      </div>
+      <p class="more">
+        More on <a href="https://github.com/renatoaragon" target="_blank" rel="noopener">github.com/renatoaragon →</a>
       </p>
     </section>
 
