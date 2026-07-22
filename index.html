@@ -319,10 +319,11 @@
           <div class="card-top"><h3>inventario-familiar</h3><span class="arrow">↗</span></div>
           <p>
             Self-hosted portal for families in an estate process: shared documents, automatic
-            income splitting (lawyer fee, monthly expenses, equal heir shares as an immutable
-            history), individual statements and a full audit log. Synthetic data only.
+            income splitting and individual statements. A dbt + DuckDB analytics layer sits on
+            top, with a reconciliation gate that fails CI if a single cent goes unaccounted for.
+            Synthetic data only.
           </p>
-          <div class="tags"><span>Product</span><span>Next.js</span><span>Postgres</span></div>
+          <div class="tags"><span>Product</span><span>dbt</span><span>Postgres</span></div>
         </a>
       </div>
       <p class="more">
