@@ -200,7 +200,7 @@
             <span class="tl-date">ongoing</span>
             <h3>Founder &amp; Engineer</h3>
             <span class="tl-org">Aragón Tecnologia</span>
-            <p>Building and operating a portfolio of AI-driven vertical SaaS products end to end: architecture, development, deployment, and operations. Consolidated the whole fleet onto a single Graviton host and built Jhonny, a voice-driven chief of staff that supervises a squad of AI agents.</p>
+            <p>Building and operating a portfolio of AI-driven vertical SaaS products end to end: architecture, development, deployment, and operations. Re-platformed the fleet onto ARM64 (AWS Graviton) and built Jhonny, a voice-driven chief of staff that supervises a squad of AI agents.</p>
           </div>
         </div>
         <div class="tl-item">
@@ -224,14 +224,13 @@
       </p>
       <div class="cards">
         <article class="card">
-          <div class="card-top"><h3>Fleet onto one Graviton host</h3></div>
+          <div class="card-top"><h3>ARM64 re-platform</h3></div>
           <p>
-            Moved 11 production apps from five x86 EC2 instances to a single ARM64 (Graviton) host,
-            one app at a time, each tested on the new host before its DNS changed. CI stayed on x64,
-            cross-packaging the ARM builds of Prisma engines and native modules (sharp, canvas).
-            Along the way the database went private, EBS encryption became the default, Terraform was
-            reconciled with the console, and secrets crossed between hosts end-to-end encrypted over
-            SSM. AWS run-rate down by about 60%.
+            Moved a multi-app production fleet from x86 to ARM64 (AWS Graviton) with no data loss.
+            Each app was deployed and verified on the new platform before any traffic moved. CI
+            stays on x64 and cross-packages the ARM builds of Prisma engines and native modules
+            (sharp, canvas). Everything is defined in Terraform, and secrets move between hosts
+            end-to-end encrypted. The AWS run-rate is about 60% lower.
           </p>
           <div class="tags"><span>AWS</span><span>ARM64</span><span>Terraform</span><span>FinOps</span></div>
         </article>
@@ -249,10 +248,9 @@
           <div class="card-top"><h3>Monitoring that watches itself</h3></div>
           <p>
             Uptime, database health and TLS expiry are checked every five minutes, from outside
-            the cloud they monitor. A home-network outage is not mistaken for a production one, and
-            alerts fire only when a state changes. A GitHub Actions watchdog checks that the monitor is
-            alive, and the monitor checks the watchdog back. Blue-green deploy agents that share one
-            nginx file now take a lock, after a deploy race caused a short outage.
+            the cloud they monitor, with alerts only when a state changes. A GitHub Actions watchdog
+            confirms the monitor is alive, and the monitor confirms the watchdog in turn, so if the
+            monitor goes silent, that silence is itself an alert.
           </p>
           <div class="tags"><span>Observability</span><span>GitHub Actions</span><span>Telegram</span></div>
         </article>
