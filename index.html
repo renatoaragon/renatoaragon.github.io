@@ -29,7 +29,7 @@
       "https://github.com/renatoaragon",
       "https://www.aragontecnologia.com"
     ],
-    "knowsAbout": ["Data Engineering", "Data Platforms", "Databricks", "PySpark", "Microsoft Azure", "Azure Data Factory", "AWS", "AWS Graviton", "Cloud Cost Optimization", "Apache Kafka", "dbt", "Terraform", "ETL", "Data Quality", "Cloud Architecture", "AI Agents", "LLM Applications", "SaaS"],
+    "knowsAbout": ["Data Engineering", "Insurance Data Integration", "Data Migration", "Data Platforms", "Databricks", "PySpark", "Microsoft Azure", "Azure Data Factory", "AWS", "AWS Graviton", "Cloud Cost Optimization", "Apache Kafka", "Apache Airflow", "Delta Lake", "Apache Iceberg", "MLflow", "dbt", "Terraform", "ETL", "Data Quality", "Cloud Architecture", "AI Agents", "LLM Applications", "SaaS"],
     "worksFor": {
       "@type": "Organization",
       "name": "Aragón Tecnologia",
@@ -64,14 +64,14 @@
     <section class="hero wrap reveal">
       <div class="hero-grid">
         <div class="hero-text">
-          <p class="mono-label"><span class="dot"></span> Senior Data Engineer · Platform Builder</p>
+          <p class="mono-label"><span class="dot"></span> Senior Data Engineer · Insurance data · Platform builder</p>
           <h1>Renato <span class="grad">Aragón</span></h1>
           <p class="lede">
-            I build reliable data platforms, raise engineering standards, and turn ambiguous
-            problems into systems teams can trust. I currently work with <strong>Hiscox</strong>
-            in enterprise data engineering and lead products end to end as founder of
-            <strong>Aragón Tecnologia</strong>, where I also run a squad of AI agents and the
-            cloud they ship to.
+            I turn messy, multi-source data into pipelines, contracts and products that hold up in
+            production. At <strong>Hiscox</strong> I build and modernise insurance data integrations
+            across six European markets. As founder of <strong>Aragón Tecnologia</strong> I own a
+            portfolio of SaaS products end to end, from architecture to the cloud bill, with a
+            squad of AI agents I supervise.
           </p>
           <div class="cta">
             <a class="btn primary" href="#work">View work</a>
@@ -79,7 +79,7 @@
             <a class="btn ghost" href="https://github.com/renatoaragon" target="_blank" rel="noopener">GitHub</a>
           </div>
           <div class="stats">
-            <div><strong>2 clouds</strong><span>Azure and AWS</span></div>
+            <div><strong>6 markets</strong><span>insurance integrations</span></div>
             <div><strong>10+</strong><span>apps in production</span></div>
             <div><strong>−60%</strong><span>AWS run-rate</span></div>
             <div><strong>0→prod</strong><span>full ownership</span></div>
@@ -110,8 +110,9 @@
       <div class="grid-2">
         <p>
           I work across data integration, migration, modelling, orchestration, and platform
-          reliability. I care about more than getting a pipeline to run: contracts must be
-          explicit, outputs reconciled, releases controlled, and decisions documented.
+          reliability. A green pipeline is not proof to me: I trust a release when its output
+          reconciles row by row, its contract is explicit, and the decision behind it is written
+          down. When something breaks, I go to the root cause and protect what is shared.
         </p>
         <p>
           I also bring a product owner's perspective. Through Aragón Tecnologia, I take products
@@ -134,6 +135,15 @@
             <li><i class="devicon-amazonwebservices-plain-wordmark"></i>Athena</li>
             <li>Databricks</li>
             <li>Azure Data Factory</li>
+            <li>SQL Server / T-SQL</li>
+            <li><i class="devicon-apachekafka-original"></i>Kafka</li>
+            <li>Spark Structured Streaming</li>
+            <li>Airflow</li>
+            <li>dbt</li>
+            <li>DuckDB</li>
+            <li>Delta Lake</li>
+            <li>Iceberg</li>
+            <li>MLflow</li>
             <li>ETL / ELT</li>
             <li>Data modelling</li>
           </ul>
@@ -191,7 +201,13 @@
             <span class="tl-date">2026 — present</span>
             <h3>Senior Data Engineer</h3>
             <span class="tl-org">Hiscox, via consultancy</span>
-            <p>Enterprise data engineering with Azure Databricks, Azure Data Factory, PySpark, Python, SQL, and Azure DevOps, focused on reliable integration, platform modernisation, data quality, and disciplined delivery.</p>
+            <p>Insurance data integration for Europe: bordereaux from brokers and coverholders in Ireland, France, Germany, Spain and the Benelux, validated, transformed and routed to policy systems on Azure Databricks, Data Factory and SQL Server.</p>
+            <ul class="tl-list">
+              <li>Designed the reusable pattern for a policy-system migration and rolled it out to six brokers through configuration alone. The first real file reconciled row by row across every output, with zero loss or duplication.</li>
+              <li>Turned rule-class activation into a metadata-driven dispatch, so new integrations no longer need orchestrator changes.</li>
+              <li>Modernised legacy robot-driven flows into a Python business-rules framework. Traced a failure hidden behind a green pipeline to a notebook namespace collision, isolated 43 shared helpers without side effects, and validated the result at 50,000 rows.</li>
+              <li>Release engineering across SQL (DACPAC), Databricks and Data Factory through Azure DevOps, plus production defect triage down to the root cause.</li>
+            </ul>
           </div>
         </div>
         <div class="tl-item">
@@ -340,6 +356,30 @@
             validate and tflint gates in CI.
           </p>
           <div class="tags"><span>Terraform</span><span>AWS</span><span>IaC</span></div>
+        </a>
+        <a class="card" href="https://github.com/renatoaragon/airflow-retail-orchestration" target="_blank" rel="noopener">
+          <div class="card-top"><h3>airflow-retail-orchestration</h3><span class="arrow">↗</span></div>
+          <p>
+            Apache Airflow orchestrating a retail medallion pipeline (bronze, silver, gold) with a
+            data-quality gate, retries and idempotent backfills. Runs locally, no cloud.
+          </p>
+          <div class="tags"><span>Airflow</span><span>Medallion</span><span>Data Quality</span></div>
+        </a>
+        <a class="card" href="https://github.com/renatoaragon/delta-lakehouse-mlflow" target="_blank" rel="noopener">
+          <div class="card-top"><h3>delta-lakehouse-mlflow</h3><span class="arrow">↗</span></div>
+          <p>
+            A medallion lakehouse on Delta Lake feeding an MLflow-tracked churn model, over
+            synthetic SaaS product-analytics data. Runs locally, no cloud.
+          </p>
+          <div class="tags"><span>Delta Lake</span><span>MLflow</span><span>Lakehouse</span></div>
+        </a>
+        <a class="card" href="https://github.com/renatoaragon/kanban-streaming-metrics" target="_blank" rel="noopener">
+          <div class="card-top"><h3>kanban-streaming-metrics</h3><span class="arrow">↗</span></div>
+          <p>
+            Kanban flow metrics on a live event stream: throughput, cycle time, WIP and
+            percentile-based delivery forecasting with Kafka and PySpark Structured Streaming.
+          </p>
+          <div class="tags"><span>Kafka</span><span>Streaming</span><span>Forecasting</span></div>
         </a>
         <a class="card" href="https://github.com/renatoaragon/data-mapping-framework" target="_blank" rel="noopener">
           <div class="card-top"><h3>data-mapping-framework</h3><span class="arrow">↗</span></div>

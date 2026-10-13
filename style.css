@@ -201,6 +201,9 @@ h3 { font-family: var(--display); }
 .tl-body h3 { font-size: 19px; font-weight: 600; margin: 4px 0 2px; }
 .tl-org { font-family: var(--mono); font-size: 13px; color: var(--muted); }
 .tl-body p { color: var(--muted); font-size: 14.5px; margin-top: 8px; max-width: 640px; }
+.tl-list { margin: 10px 0 0; padding-left: 18px; max-width: 640px; }
+.tl-list li { color: var(--muted); font-size: 14px; margin-top: 6px; }
+.tl-list li::marker { color: var(--accent-3); }
 
 /* cards */
 .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
