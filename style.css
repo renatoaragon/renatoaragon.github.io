@@ -133,7 +133,7 @@ h3 { font-family: var(--display); }
 .btn.ghost { background: var(--glass); }
 .btn.ghost:hover { border-color: var(--accent); color: #fff; }
 
-.stats { display: flex; gap: 32px; margin-top: 40px; flex-wrap: wrap; }
+.stats { display: flex; gap: 22px; margin-top: 40px; flex-wrap: wrap; }
 .stats div { display: flex; flex-direction: column; }
 .stats strong { font-family: var(--display); font-size: 26px; color: #fff; }
 .stats span { font-family: var(--mono); font-size: 12px; color: var(--muted); }
@@ -260,3 +260,23 @@ footer { border-top: 1px solid var(--border); padding: 30px 0; }
   .nav nav { display: none; }
   .section { padding: 60px 24px; }
 }
+
+/* hero: where and which languages */
+.hero-meta { font-family: var(--mono); font-size: 13px; color: var(--muted); margin-top: 16px; }
+
+/* results: before -> after tiles */
+.results { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.result {
+  display: flex; flex-direction: column; gap: 6px;
+  padding: 20px 22px; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
+}
+.r-area { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.r-before { color: var(--muted); text-decoration: line-through; text-decoration-color: rgba(255, 255, 255, 0.25); font-size: 14px; }
+.r-after { font-family: var(--display); font-size: 19px; color: #fff; }
+.r-after::before { content: "→ "; color: var(--accent); }
+
+/* experience: education and languages */
+.background { margin-top: 34px; display: grid; gap: 10px; max-width: 760px; }
+.background p { color: var(--muted); font-size: 14px; }
+.background .mono-label { display: inline-block; min-width: 96px; margin: 0 8px 0 0; }
