@@ -29,7 +29,7 @@
       "https://github.com/renatoaragon",
       "https://www.aragontecnologia.com"
     ],
-    "knowsAbout": ["Data Engineering", "Data Platforms", "Databricks", "PySpark", "Microsoft Azure", "Azure Data Factory", "AWS", "Apache Kafka", "dbt", "Terraform", "ETL", "Data Quality", "Cloud Architecture", "SaaS"],
+    "knowsAbout": ["Data Engineering", "Data Platforms", "Databricks", "PySpark", "Microsoft Azure", "Azure Data Factory", "AWS", "AWS Graviton", "Cloud Cost Optimization", "Apache Kafka", "dbt", "Terraform", "ETL", "Data Quality", "Cloud Architecture", "AI Agents", "LLM Applications", "SaaS"],
     "worksFor": {
       "@type": "Organization",
       "name": "Aragón Tecnologia",
@@ -52,6 +52,7 @@
         <a href="#about">about</a>
         <a href="#stack">stack</a>
         <a href="#experience">experience</a>
+        <a href="#recent">recent</a>
         <a href="#work">work</a>
         <a href="#opensource">open source</a>
         <a href="#contact">contact</a>
@@ -69,7 +70,8 @@
             I build reliable data platforms, raise engineering standards, and turn ambiguous
             problems into systems teams can trust. I currently work with <strong>Hiscox</strong>
             in enterprise data engineering and lead products end to end as founder of
-            <strong>Aragón Tecnologia</strong>.
+            <strong>Aragón Tecnologia</strong>, where I also run a squad of AI agents and the
+            cloud they ship to.
           </p>
           <div class="cta">
             <a class="btn primary" href="#work">View work</a>
@@ -78,7 +80,8 @@
           </div>
           <div class="stats">
             <div><strong>2 clouds</strong><span>Azure and AWS</span></div>
-            <div><strong>6+</strong><span>shipped products</span></div>
+            <div><strong>10+</strong><span>apps in production</span></div>
+            <div><strong>−60%</strong><span>AWS run-rate</span></div>
             <div><strong>0→prod</strong><span>full ownership</span></div>
           </div>
         </div>
@@ -92,6 +95,7 @@
   <span class="c-prop">role</span>: <span class="c-str">"Senior Data Engineer"</span>,
   <span class="c-prop">focus</span>: <span class="c-str">"reliable data platforms"</span>,
   <span class="c-prop">cloud</span>: [<span class="c-str">"Azure"</span>, <span class="c-str">"AWS"</span>],
+  <span class="c-prop">agents</span>: <span class="c-str">"supervised, scored, accountable"</span>,
   <span class="c-prop">approach</span>: <span class="c-str">"evidence over assumptions"</span>,
   <span class="c-prop">scope</span>: <span class="c-str">"architecture to operations"</span>
 }</code></pre>
@@ -146,6 +150,9 @@
             <li><i class="devicon-nginx-original"></i>Nginx</li>
             <li><i class="devicon-githubactions-plain"></i>CI/CD</li>
             <li>Blue-green deploys</li>
+            <li>AWS Graviton (ARM64)</li>
+            <li>AWS SSM</li>
+            <li>Cost optimization</li>
           </ul>
         </div>
         <div class="skill-group">
@@ -166,6 +173,9 @@
             <li><i class="devicon-redis-plain"></i>Redis</li>
             <li>REST APIs</li>
             <li>LLM integration</li>
+            <li>Claude API</li>
+            <li>AI agents</li>
+            <li>Voice (STT / TTS)</li>
           </ul>
         </div>
       </div>
@@ -190,7 +200,7 @@
             <span class="tl-date">ongoing</span>
             <h3>Founder &amp; Engineer</h3>
             <span class="tl-org">Aragón Tecnologia</span>
-            <p>Building and operating a portfolio of AI-driven vertical SaaS products end to end: architecture, development, deployment, and operations.</p>
+            <p>Building and operating a portfolio of AI-driven vertical SaaS products end to end: architecture, development, deployment, and operations. Consolidated the whole fleet onto a single Graviton host and built Jhonny, a voice-driven chief of staff that supervises a squad of AI agents.</p>
           </div>
         </div>
         <div class="tl-item">
@@ -202,6 +212,50 @@
             <p>Data engineering on AWS S3, EC2, Athena, PySpark and infrastructure as code with Terraform, in an international, English-speaking environment.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="recent" class="wrap section reveal">
+      <p class="mono-label">// recent</p>
+      <h2>Recently shipped.</h2>
+      <p class="section-sub">
+        Operations work behind the products: cheaper infrastructure, accountable AI agents, and
+        monitoring that watches itself.
+      </p>
+      <div class="cards">
+        <article class="card">
+          <div class="card-top"><h3>Fleet onto one Graviton host</h3></div>
+          <p>
+            Moved 11 production apps from five x86 EC2 instances to a single ARM64 (Graviton) host,
+            one app at a time, each tested on the new host before its DNS changed. CI stayed on x64,
+            cross-packaging the ARM builds of Prisma engines and native modules (sharp, canvas).
+            Along the way the database went private, EBS encryption became the default, Terraform was
+            reconciled with the console, and secrets crossed between hosts end-to-end encrypted over
+            SSM. AWS run-rate down by about 60%.
+          </p>
+          <div class="tags"><span>AWS</span><span>ARM64</span><span>Terraform</span><span>FinOps</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top"><h3>Jhonny: a squad of AI agents</h3></div>
+          <p>
+            A voice-driven chief of staff that supervises the AI coding agents working across my
+            repositories. Each agent gets a weekly scorecard (delivery, rigour, reliability, autonomy)
+            and a critical review. Two in-house agents keep watch on cloud cost and the security
+            posture. A holographic HUD shows the whole squad orbiting the core in real time.
+          </p>
+          <div class="tags"><span>AI agents</span><span>Claude</span><span>Voice</span><span>Next.js</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top"><h3>Monitoring that watches itself</h3></div>
+          <p>
+            Uptime, database health and TLS expiry are checked every five minutes, from outside
+            the cloud they monitor. A home-network outage is not mistaken for a production one, and
+            alerts fire only when a state changes. A GitHub Actions watchdog checks that the monitor is
+            alive, and the monitor checks the watchdog back. Blue-green deploy agents that share one
+            nginx file now take a lock, after a deploy race caused a short outage.
+          </p>
+          <div class="tags"><span>Observability</span><span>GitHub Actions</span><span>Telegram</span></div>
+        </article>
       </div>
     </section>
 
