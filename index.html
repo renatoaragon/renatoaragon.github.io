@@ -21,7 +21,9 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Renato Aragón",
-    "jobTitle": "Senior Data Engineer",
+    "jobTitle": "Senior Data Engineer & Data Architect",
+    "address": { "@type": "PostalAddress", "addressLocality": "Porto", "addressCountry": "PT" },
+    "knowsLanguage": ["pt", "en", "es"],
     "url": "https://renatoaragon.github.io",
     "image": "https://renatoaragon.github.io/assets/profile.jpg",
     "sameAs": [
@@ -29,7 +31,7 @@
       "https://github.com/renatoaragon",
       "https://www.aragontecnologia.com"
     ],
-    "knowsAbout": ["Data Engineering", "Insurance Data Integration", "Data Migration", "Data Platforms", "Databricks", "PySpark", "Microsoft Azure", "Azure Data Factory", "AWS", "AWS Graviton", "Cloud Cost Optimization", "Apache Kafka", "Apache Airflow", "Delta Lake", "Apache Iceberg", "MLflow", "dbt", "Terraform", "ETL", "Data Quality", "Cloud Architecture", "AI Agents", "LLM Applications", "SaaS"],
+    "knowsAbout": ["Data Engineering", "Insurance Data Integration", "Data Migration", "Data Platforms", "Data Architecture", "Databricks", "Snowflake", "AWS Glue", "Amazon EMR", "Oracle Cloud (OCI)", "PySpark", "Microsoft Azure", "Azure Data Factory", "AWS", "AWS Graviton", "Cloud Cost Optimization", "Apache Kafka", "Apache Airflow", "Delta Lake", "Apache Iceberg", "MLflow", "dbt", "Terraform", "ETL", "Data Quality", "Cloud Architecture", "AI Agents", "LLM Applications", "SaaS"],
     "worksFor": {
       "@type": "Organization",
       "name": "Aragón Tecnologia",
@@ -50,6 +52,7 @@
       <a href="#top" class="brand">RA<span>.</span></a>
       <nav>
         <a href="#about">about</a>
+        <a href="#results">results</a>
         <a href="#stack">stack</a>
         <a href="#experience">experience</a>
         <a href="#recent">recent</a>
@@ -73,16 +76,18 @@
             portfolio of SaaS products end to end, from architecture to the cloud bill, with a
             squad of AI agents I supervise.
           </p>
+          <p class="hero-meta">Porto, Portugal · PT / EN / ES · remote across the EU</p>
           <div class="cta">
             <a class="btn primary" href="#work">View work</a>
+            <a class="btn ghost" href="assets/Renato_Aragon_CV.pdf" download>Download CV</a>
             <a class="btn ghost" href="https://www.linkedin.com/in/aragonrenato/" target="_blank" rel="noopener">LinkedIn</a>
             <a class="btn ghost" href="https://github.com/renatoaragon" target="_blank" rel="noopener">GitHub</a>
           </div>
           <div class="stats">
+            <div><strong>14+ yrs</strong><span>in data, since 2012</span></div>
             <div><strong>6 markets</strong><span>insurance integrations</span></div>
             <div><strong>10+</strong><span>apps in production</span></div>
             <div><strong>−60%</strong><span>AWS run-rate</span></div>
-            <div><strong>0→prod</strong><span>full ownership</span></div>
           </div>
         </div>
         <div class="hero-aside">
@@ -120,6 +125,23 @@
           operational responsibility shapes how I design data systems and how I lead technical work.
         </p>
       </div>
+    </section>
+
+    <section id="results" class="wrap section reveal">
+      <p class="mono-label">// results</p>
+      <h2>Before → after.</h2>
+      <p class="section-sub">
+        What the platforms changed for the people using them.
+      </p>
+      <div class="results">
+        <div class="result"><span class="r-area">Monthly billing reconciliation</span><span class="r-before">12 days</span><span class="r-after">real-time dashboard</span></div>
+        <div class="result"><span class="r-area">Partner onboarding signature</span><span class="r-before">8 hours</span><span class="r-after">8 seconds</span></div>
+        <div class="result"><span class="r-area">Internal report generation</span><span class="r-before">2 business days</span><span class="r-after">under 2 minutes</span></div>
+        <div class="result"><span class="r-area">Tax-authority emails</span><span class="r-before">1,500+ a day, read by hand</span><span class="r-after">automated ingestion and tracking</span></div>
+        <div class="result"><span class="r-area">Revenue visibility</span><span class="r-before">no real-time data</span><span class="r-after">live P&amp;L, payroll and ledger</span></div>
+        <div class="result"><span class="r-area">Policy-migration rollout</span><span class="r-before">one broker at a time</span><span class="r-after">one pattern, six brokers, config only</span></div>
+      </div>
+      <p class="more">The first five at AG Capital Group, the last at Hiscox.</p>
     </section>
 
     <section id="stack" class="wrap section reveal">
@@ -200,7 +222,7 @@
           <div class="tl-body">
             <span class="tl-date">2026 — present</span>
             <h3>Senior Data Engineer</h3>
-            <span class="tl-org">Hiscox, via consultancy</span>
+            <span class="tl-org">Hiscox · B2B contract</span>
             <p>Insurance data integration for Europe: bordereaux from brokers and coverholders in Ireland, France, Germany, Spain and the Benelux, validated, transformed and routed to policy systems on Azure Databricks, Data Factory and SQL Server.</p>
             <ul class="tl-list">
               <li>Designed the reusable pattern for a policy-system migration and rolled it out to six brokers through configuration alone. The first real file reconciled row by row across every output, with zero loss or duplication.</li>
@@ -213,21 +235,51 @@
         <div class="tl-item">
           <div class="tl-dot"></div>
           <div class="tl-body">
-            <span class="tl-date">ongoing</span>
-            <h3>Founder &amp; Engineer</h3>
-            <span class="tl-org">Aragón Tecnologia</span>
-            <p>Building and operating a portfolio of AI-driven vertical SaaS products end to end: architecture, development, deployment, and operations. Re-platformed the fleet onto ARM64 (AWS Graviton) and built Jhonny, a voice-driven chief of staff that supervises a squad of AI agents.</p>
+            <span class="tl-date">Aug 2024 — Jan 2026</span>
+            <h3>Senior Data Engineer</h3>
+            <span class="tl-org">BMW Group · B2B contract</span>
+            <p>Enterprise batch pipelines for large-scale automotive and operational data, in a regulated, international environment.</p>
+            <ul class="tl-list">
+              <li>Designed and modernised batch pipelines on AWS Glue and EMR, integrated with the group's cloud data hub.</li>
+              <li>Built complex PySpark transformation layers, and applied Apache Iceberg upserts, schema evolution and time travel.</li>
+              <li>Contributed to a cloud migration from OCI to AWS, mapping services and re-platforming the pipelines that depended on them.</li>
+              <li>Scaled infrastructure patterns with Terraform and cloud-native orchestration.</li>
+            </ul>
           </div>
         </div>
         <div class="tl-item">
           <div class="tl-dot"></div>
           <div class="tl-body">
-            <span class="tl-date">earlier</span>
-            <h3>Data Engineer</h3>
-            <span class="tl-org">BMW Group - USA</span>
-            <p>Data engineering on AWS S3, EC2, Athena, PySpark and infrastructure as code with Terraform, in an international, English-speaking environment.</p>
+            <span class="tl-date">2018 — 2026</span>
+            <h3>Senior Data Engineer · Technical Lead &amp; Coordinator</h3>
+            <span class="tl-org">AG Capital Group · B2B contract</span>
+            <p>Led the evolution of a central analytics and operational platform: 14+ integrated systems, 8 business units and 324 daily users.</p>
+            <ul class="tl-list">
+              <li>Architected ETL pipelines integrating financial systems, CRM, the tax authorities and Microsoft Graph.</li>
+              <li>Led the migration of an AWS data lake to OCI, re-architecting storage, ingestion and processing without disrupting daily operations.</li>
+              <li>Built governed Snowflake ELT models and analytical layers for finance and commercial teams, with audit layers, deduplication and a real-time P&amp;L tied to the ledger and payroll.</li>
+              <li>Cut operational effort by over 40% through modernisation, automation and GenAI. Coordinated cross-functional teams and mentored engineers.</li>
+            </ul>
           </div>
         </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <span class="tl-date">2013 — present</span>
+            <h3>Founder, Lead Data Engineer &amp; Data Architect</h3>
+            <span class="tl-org">Aragón Tecnologia</span>
+            <p>Data platforms and automation for clients in Brazil and Portugal, and a portfolio of SaaS products built and run end to end.</p>
+            <ul class="tl-list">
+              <li>Event-driven pipelines with Kafka and a transactional outbox, streaming PostgreSQL changes into near-real-time KPIs and cross-product analytics.</li>
+              <li>Products in production: PsycoHub, NutriPro, Sola Beauty, Dockly and LaboraHub.</li>
+              <li>Re-platformed the fleet onto ARM64 (AWS Graviton) and built Jhonny, a voice-driven chief of staff that supervises a squad of AI agents.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="background">
+        <p><span class="mono-label">education</span> Postgraduate in Big Data &amp; Analytics, UNISUL (in progress, 2024–2026) · Business Administration studies, UDESC</p>
+        <p><span class="mono-label">languages</span> Portuguese (native) · English (C1) · Spanish (intermediate)</p>
       </div>
     </section>
 
@@ -306,6 +358,22 @@
             and real-time financial reporting that cuts no-shows and helps independent professionals grow.
           </p>
           <div class="tags"><span>SaaS</span><span>Automation</span></div>
+        </a>
+        <a class="card" href="https://dockly.digital" target="_blank" rel="noopener">
+          <div class="card-top"><h3>Dockly</h3><span class="arrow">↗</span></div>
+          <p>
+            Client onboarding without the email chase. Workspaces, projects and invited clients
+            share one guided flow, so every document and task has a place and an owner.
+          </p>
+          <div class="tags"><span>SaaS</span><span>Onboarding</span></div>
+        </a>
+        <a class="card" href="https://laborahub.work" target="_blank" rel="noopener">
+          <div class="card-top"><h3>LaboraHub</h3><span class="arrow">↗</span></div>
+          <p>
+            Jobs in Portugal for international talent: candidate profiles with documents, job
+            search and alerts that bring matching roles to candidates instead of waiting for them.
+          </p>
+          <div class="tags"><span>SaaS</span><span>Jobs</span><span>Portugal</span></div>
         </a>
       </div>
       <p class="more">
@@ -428,9 +496,10 @@
       <div class="contact-card">
         <p class="mono-label">// contact</p>
         <h2>Let's build something.</h2>
-        <p class="contact-sub">Open to interesting data engineering and product conversations.</p>
+        <p class="contact-sub">Based in Porto and open to remote data engineering and architecture roles across the EU.</p>
         <div class="cta">
           <a class="btn primary" href="mailto:renatoaragon@icloud.com">Email me</a>
+          <a class="btn ghost" href="assets/Renato_Aragon_CV.pdf" download>Download CV</a>
           <a class="btn ghost" href="https://www.linkedin.com/in/aragonrenato/" target="_blank" rel="noopener">LinkedIn</a>
           <a class="btn ghost" href="https://github.com/renatoaragon" target="_blank" rel="noopener">GitHub</a>
         </div>
