@@ -31,7 +31,7 @@
       "https://github.com/renatoaragon",
       "https://www.aragontecnologia.com"
     ],
-    "knowsAbout": ["Data Engineering", "Insurance Data Integration", "Data Migration", "Data Platforms", "Data Architecture", "Databricks", "Snowflake", "AWS Glue", "Amazon EMR", "Oracle Cloud (OCI)", "PySpark", "Microsoft Azure", "Azure Data Factory", "AWS", "AWS Graviton", "Cloud Cost Optimization", "Apache Kafka", "Apache Airflow", "Delta Lake", "Apache Iceberg", "MLflow", "dbt", "Terraform", "ETL", "Data Quality", "Cloud Architecture", "AI Agents", "LLM Applications", "SaaS"],
+    "knowsAbout": ["Data Engineering", "Insurance Data Integration", "Data Migration", "Data Platforms", "Data Architecture", "Databricks", "AWS Glue", "Amazon EMR", "Oracle Cloud (OCI)", "PySpark", "Microsoft Azure", "Azure Data Factory", "AWS", "AWS Graviton", "Cloud Cost Optimization", "Apache Kafka", "Apache Airflow", "Delta Lake", "Apache Iceberg", "MLflow", "dbt", "Terraform", "ETL", "Data Quality", "Cloud Architecture", "AI Agents", "LLM Applications", "SaaS"],
     "worksFor": {
       "@type": "Organization",
       "name": "Aragón Tecnologia",
@@ -181,6 +181,8 @@
             <li><i class="devicon-azuredevops-plain"></i>Azure DevOps</li>
             <li><i class="devicon-terraform-plain"></i>Terraform</li>
             <li><i class="devicon-docker-plain"></i>Docker</li>
+            <li><i class="devicon-kubernetes-plain"></i>Kubernetes (OKE)</li>
+            <li><i class="devicon-helm-original"></i>Helm</li>
             <li><i class="devicon-linux-plain"></i>Linux</li>
             <li><i class="devicon-nginx-original"></i>Nginx</li>
             <li><i class="devicon-githubactions-plain"></i>CI/CD</li>
@@ -197,6 +199,7 @@
             <li><i class="devicon-react-original"></i>React</li>
             <li><i class="devicon-typescript-plain"></i>TypeScript</li>
             <li><i class="devicon-nodejs-plain"></i>Node.js</li>
+            <li><i class="devicon-csharp-plain"></i>C# / .NET Framework</li>
             <li><i class="devicon-tailwindcss-original"></i>Tailwind</li>
           </ul>
         </div>
@@ -253,14 +256,15 @@
         <div class="tl-item">
           <div class="tl-dot"></div>
           <div class="tl-body">
-            <span class="tl-date">2018 — 2026</span>
+            <span class="tl-date">2023 — 2026</span>
             <h3>Senior Data Engineer · Technical Lead &amp; Coordinator</h3>
             <span class="tl-org">AG Capital Group · B2B contract</span>
             <p>Led the evolution of a central analytics and operational platform: 14+ integrated systems, 8 business units and 324 daily users.</p>
             <ul class="tl-list">
               <li>Architected ETL pipelines integrating financial systems, CRM, the tax authorities and Microsoft Graph.</li>
-              <li>Led the migration of an AWS data lake to OCI, re-architecting storage, ingestion and processing without disrupting daily operations.</li>
-              <li>Built governed Snowflake ELT models and analytical layers for finance and commercial teams, with audit layers, deduplication and a real-time P&amp;L tied to the ledger and payroll.</li>
+              <li>Built and deployed the agent portal end to end (Next.js/React, Node APIs, PostgreSQL, Microsoft Entra ID SSO, embedded Metabase dashboards) on Kubernetes (OCI/OKE) with Docker, Helm and a CI pipeline, as the first step of the group's move from AWS to Oracle Cloud.</li>
+              <li>Automated CRM and finance workflows in Python: HubSpot integrations, KPI bots on Telegram and WhatsApp, billing and EBITDA reporting.</li>
+              <li>Built governed ELT models and analytical layers on PostgreSQL for finance and commercial teams, with audit layers, deduplication and a real-time P&amp;L tied to the ledger and payroll.</li>
               <li>Cut operational effort by over 40% through modernisation, automation and GenAI. Coordinated cross-functional teams and mentored engineers.</li>
             </ul>
           </div>
@@ -273,8 +277,9 @@
             <span class="tl-org">Aragón Tecnologia</span>
             <p>Data platforms and automation for clients in Brazil and Portugal, and a portfolio of SaaS products built and run end to end.</p>
             <ul class="tl-list">
-              <li>Event-driven pipelines with Kafka and a transactional outbox, streaming PostgreSQL changes into near-real-time KPIs and cross-product analytics.</li>
+              <li>Event backbone with a transactional outbox on PostgreSQL, feeding near-real-time KPIs and cross-product analytics.</li>
               <li>Products in production: PsycoHub, NutriPro, Dockly and LaboraHub.</li>
+              <li>Built a desktop CRM for a travel company's customer service team in C#/.NET Framework with PostgreSQL on AWS.</li>
               <li>Re-platformed the fleet onto ARM64 (AWS Graviton) and built Jhonny, a voice-driven chief of staff that supervises a squad of AI agents.</li>
             </ul>
           </div>
